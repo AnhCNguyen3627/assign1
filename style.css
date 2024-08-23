@@ -1,0 +1,105 @@
+.container:before {
+    content: "";
+    position: fixed;
+    top: -5%;
+    left: -5%;
+    right: 0;
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+    display: block;
+    background-image: url("background.jpg");
+    height: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    margin: auto;
+    width: fit-content;
+}
+
+.container {
+    background-color: cyan;
+    margin-top: 10vh;
+    min-height: calc(100vh - 80px - 2em - 20vh);
+    padding: 20px;
+    position: relative;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.form-style {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.text-input {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.typed-input {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.typed-span, .text-input label {
+    text-align: left;
+    width: 20%;
+    padding: 5px;
+}
+
+.text-input input,
+textarea {
+    width: 50%;
+}
+
+.typed-input *:not(.typed-span) {
+    padding-right: 4px;
+}
+
+.redirect-link a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: #000000 2px solid;
+    border-radius: 10px;
+}
+
+.redirect-link a:hover {
+    color: yellow;
+    background-color: darkblue;
+}
